@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Allow body to grow beyond the viewport if necessary */
+}
+
+/* Container Styles */
+#container {
+    background-color: #ffffff; /* White background for container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 50px; /* Add margin to ensure footer isn't overlapped */
+    margin-top: 8rem;
+}
+
+/* Title Styles */
+h1 {
+    text-align: center;
+    color: #00796b; /* Teal color */
+    margin-bottom: 20px;
+}
+
+/* Array Display Styles */
+#array-display {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 200px; /* Set a max height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+/* Array Item Styles */
+.array-item {
+    background-color: #e0f7fa; /* Light cyan background */
+    border: 1px solid #b2ebf2; /* Lighter cyan for border */
+    padding: 10px;
+    margin: 5px 0; /* Margin between items */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.array-item:hover {
+    background-color: #b2ebf2; /* Change color on hover */
+}
+
+/* Input Section Styles */
+#input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Button Styles */
+button {
+    background-color: #00796b; /* Teal background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Button Section Styles */
+#button-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: center; /* Center the buttons */
+}
+
+/* Button Class Styles */
+.btn {
+    margin: 5px; /* Space between buttons */
+}
+
+#result-message {
+    text-align: center;
+    margin: 1rem;
+    color: #004d40;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #00796b; /* Teal background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    #container {
+        padding: 15px; /* Reduce container padding */
+        margin-top: 4rem;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width */
+        margin: 5px 0; /* Space between buttons */
+    }
+
+    #input-section {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    input[type="text"] {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add space below input */
+    }
+
+    #footer {
+        font-size: 14px; /* Smaller font on mobile screens */
+    }
+}
